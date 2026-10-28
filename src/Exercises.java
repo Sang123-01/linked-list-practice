@@ -74,16 +74,16 @@ public class Exercises {
         ListNode current = head;
         while(current != null)
         {
-            if(current.data < 0)
+            if(current.next != null)
             {
-                System.out.print(current.data + " -> ");
+                current.data = Math.abs(current.data);
+                System.out.print(current + " -> ");
             }else{
-                Math.abs(current.data);
-                System.out.print(current.data + " -> ");
+                current.data = Math.abs(current.data);
+                System.out.print(current);
             }
-            
+            current = current.next;
         }
-
             // "4 -> 7 -> 8 -> 6 -> 2";
     }
 
