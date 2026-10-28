@@ -70,7 +70,16 @@ public class Exercises {
      */
     public static void addToEnd(ListNode head, int toAdd) 
     {
-
+                if(head==null)
+        {
+            return;
+        }
+        ListNode current = head;
+        while(current.next != null)
+        {
+            current = current.next;
+        }
+        current.next = new ListNode(toAdd);
     }
 
     /**
