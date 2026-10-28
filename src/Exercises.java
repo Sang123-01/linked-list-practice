@@ -71,7 +71,20 @@ public class Exercises {
      */
     public static void makePositive(ListNode head) 
     {
-        
+        ListNode current = head;
+        while(current != null)
+        {
+            if(current.data < 0)
+            {
+                System.out.print(current.data + " -> ");
+            }else{
+                Math.abs(current.data);
+                System.out.print(current.data + " -> ");
+            }
+            
+        }
+
+            // "4 -> 7 -> 8 -> 6 -> 2";
     }
 
     /**
