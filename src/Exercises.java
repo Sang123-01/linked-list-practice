@@ -11,8 +11,16 @@ public class Exercises {
      * @param head the head of the linked list
      * @return sum of the values in the list
      */
-    public static int sum(ListNode head) {
-        return -1;
+    public static int sum(ListNode head) 
+    {
+        int count = 0;
+        ListNode current = head;
+        while(current != null)
+            {
+                count += current.data;
+                current = current.next;
+            }
+        return count;
     }
 
     /**
@@ -61,8 +69,9 @@ public class Exercises {
      * 
      * @param head the head of the list
      */
-    public static void makePositive(ListNode head) {
-
+    public static void makePositive(ListNode head) 
+    {
+        
     }
 
     /**
